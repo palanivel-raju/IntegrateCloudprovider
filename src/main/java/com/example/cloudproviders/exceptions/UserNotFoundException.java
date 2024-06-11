@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.exceptions;
+package com.example.cloudproviders.exceptions;
 
 public class UserNotFoundException extends Exception {
     public UserNotFoundException(String message) {

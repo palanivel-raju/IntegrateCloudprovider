@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.libraries.google;
+package com.example.cloudproviders.libraries.google;
 
 import java.util.Date;
 import java.util.UUID;

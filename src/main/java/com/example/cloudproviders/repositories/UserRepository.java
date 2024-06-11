@@ -1,6 +1,6 @@
-package com.example.cloudproviderstarter.repositories;
+package com.example.cloudproviders.repositories;
 
-import com.example.cloudproviderstarter.models.User;
+import com.example.cloudproviders.models.User;
 
 import java.util.Optional;
 

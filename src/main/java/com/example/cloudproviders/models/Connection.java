@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.models;
+package com.example.cloudproviders.models;
 
 public class Connection extends BaseModel {
     private String connectionId;

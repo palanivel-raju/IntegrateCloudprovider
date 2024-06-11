@@ -1,6 +1,6 @@
-package com.example.cloudproviderstarter.dtos;
+package com.example.cloudproviders.dtos;
 
-import com.example.cloudproviderstarter.models.ConnectionStatus;
+import com.example.cloudproviders.models.ConnectionStatus;
 
 public class CreateConnectionResponseDto {
     private String connectionId;

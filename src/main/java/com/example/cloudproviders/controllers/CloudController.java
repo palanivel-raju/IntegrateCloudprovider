@@ -1,8 +1,8 @@
-package com.example.cloudproviderstarter.controllers;
+package com.example.cloudproviders.controllers;
 
-import com.example.cloudproviderstarter.dtos.CreateConnectionRequestDto;
-import com.example.cloudproviderstarter.dtos.CreateConnectionResponseDto;
-import com.example.cloudproviderstarter.services.CloudService;
+import com.example.cloudproviders.dtos.CreateConnectionRequestDto;
+import com.example.cloudproviders.dtos.CreateConnectionResponseDto;
+import com.example.cloudproviders.services.CloudService;
 
 public class CloudController {
     private CloudService cloudService;

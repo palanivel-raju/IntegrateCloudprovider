@@ -1,8 +1,8 @@
-package com.example.cloudproviderstarter.libraries.google;
+package com.example.cloudproviders.libraries.aws;
 
 import java.util.Date;
 
-public class GoogleConnectionResponse {
+public class AWSConnectionResponse {
     private String connectionId;
     private String connectionStatus;
     private Date connectionDate;

@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.libraries.aws;
+package com.example.cloudproviders.libraries.aws;
 
 import java.util.Date;
 import java.util.UUID;

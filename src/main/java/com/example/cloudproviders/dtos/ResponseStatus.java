@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.dtos;
+package com.example.cloudproviders.dtos;
 
 public enum ResponseStatus {
     SUCCESS,

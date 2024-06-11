@@ -1,4 +1,4 @@
-package com.example.cloudproviderstarter.models;
+package com.example.cloudproviders.models;
 
 public class User extends BaseModel {
     private String name;
