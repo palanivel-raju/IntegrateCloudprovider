@@ -2,6 +2,9 @@ package com.example.cloudproviders.controllers;
 
 import com.example.cloudproviders.dtos.CreateConnectionRequestDto;
 import com.example.cloudproviders.dtos.CreateConnectionResponseDto;
+import com.example.cloudproviders.dtos.ResponseStatus;
+import com.example.cloudproviders.exceptions.UserNotFoundException;
+import com.example.cloudproviders.models.Connection;
 import com.example.cloudproviders.services.CloudService;
 
 public class CloudController {
@@ -12,6 +15,16 @@ public class CloudController {
     }
 
     public CreateConnectionResponseDto createConnection(CreateConnectionRequestDto createConnectionRequestDto) {
-        return null;
+        CreateConnectionResponseDto responseDto = new CreateConnectionResponseDto();
+        try {
+            Connection connection = cloudService.createConnection(createConnectionRequestDto.getUserId());
+            responseDto.setConnectionId(connection.getConnectionId());
+            responseDto.setConnectionStatus(connection.getConnectionStatus());
+            responseDto.setResponseStatus(ResponseStatus.SUCCESS);
+        } catch (UserNotFoundException e) {
+            responseDto.setResponseStatus(ResponseStatus.FAILURE);
+        }
+        return responseDto;
     }
 }
+
